@@ -13,7 +13,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
 }
-
+/*nav*/
 .navMenu {
   position: absolute;
   top: 50px;
@@ -48,7 +48,7 @@ body {
 
 
 
-
+/*hamburger mobile menu*/
 
 .hamb{
     cursor: pointer;
@@ -85,7 +85,7 @@ body {
 
 .side-menu {
     display: none;
-} 
+}
 
 
 /* Toggle menu icon */
@@ -109,8 +109,7 @@ body {
 
 
 
-
-
+/*mobile */
 
 
 @media(max-width: 480px) {
@@ -133,7 +132,19 @@ body {
     .logo img{
         padding-left: 25px;
     }
+
+    .hero h1 {
+      font-size: 32px !important;
+      padding-left: 35px;
+      padding-right: 35px;
+  }
+    .hero p {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90% !important;
+  }
 }
+/* hero section */
 .hero {
     width: 100vw;
     height: 100vh;
@@ -155,7 +166,7 @@ body {
 
 }
 .hero h1 {
-    font-size: 3em;
+    font-size: 42px;
     margin-top: 0;
     margin-bottom: 0.2em;
     color: #fff;
