@@ -12,6 +12,8 @@ header {
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
+  overflow-x:hidden;
+
 }
 /*nav*/
 .navMenu {
@@ -20,8 +22,6 @@ body {
   z-index: 3;
   left: 60%;
   overflow: hidden;
-    
-  
 }
 
 .navMenu a {
@@ -107,60 +107,22 @@ body {
 
 
 
-
-
-/*mobile */
-
-
-@media(max-width: 480px) {
-    .navMenu {
-        top: 7rem;
-        overflow: hidden;
-        display: none;
-        left: 40%;
-        position: absolute;
-
-    }
-    .navMenu a {
-        padding-bottom: 10px;
-        display: block;
-    }
-
-    .hamb{
-        display: block;
-    }
-    .logo img{
-        padding-left: 25px;
-    }
-
-    .hero h1 {
-      font-size: 32px !important;
-      padding-left: 35px;
-      padding-right: 35px;
-  }
-    .hero p {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90% !important;
-  }
+/* headings */
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 18px;
 }
 
-@media (max-width:768px) {
-    .navMenu a {
-      width: 6rem;
-      font-size: 0.90em;
-    }
-    .hero h1 {
-        font-size: 32px !important;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-      .hero p {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90% !important;
-    }
-  }
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
 /* hero section */
 .hero {
     width: 100vw;
@@ -183,7 +145,6 @@ body {
 
 }
 .hero h1 {
-    font-size: 42px;
     margin-top: 0;
     margin-bottom: 0.2em;
     color: #fff;
@@ -194,11 +155,9 @@ body {
 }
 .hero p {
     color: #fff;
-    font-size: 1em;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    line-height: 1.5em;
 }
 .hero .hero-btn {
     display: block;
@@ -218,4 +177,176 @@ body {
 }
 .hero .hero-btn:hover {
     opacity: 0.9;
+}
+
+
+/* what we do section */
+.what-we-do {
+  width: 100vw;
+  height: 75vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+
+}
+.what-we-do .hero-inner{
+  width: 100%;
+  height: 10vh;
+
+}
+.what-we-do h2 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.what-we-do p {
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding-top: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 200px;
+  width: 100%;
+  margin-top: 100px;
+  justify-content: space-between; /* could also try with space-around */
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.flex-child {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 6px;
+  padding: 16px;
+  flex: 1;
+}
+
+
+.what-we-do .flex-child p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.icon {
+  font-family: 'holberton_school-icon';
+  font-size: 76px;
+  color: #FF6565;
+}
+
+
+
+/*
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+  font-family: 'holberton_school-icon-ic_sound';
+  font-size: 76px;
+
+}
+*/
+
+.section-image-1:before {
+  content: "\e90e";
+}
+
+.section-image-2:before {
+  content: "\e910";
+}
+
+.section-image-3:before {
+  content: "\e90d";
+}
+
+.section-image-4:before {
+  content: "\e909";
+}
+
+
+
+
+/*mobile */
+
+
+@media(max-width: 480px) {
+  .navMenu {
+      top: 7rem;
+      overflow: hidden;
+      display: none;
+      left: 40%;
+      position: absolute;
+
+  }
+  .navMenu a {
+      padding-bottom: 10px;
+      display: block;
+  }
+
+  .hamb{
+      display: block;
+  }
+  .logo img{
+      padding-left: 25px;
+  }
+
+  .hero h1 {
+    font-size: 32px !important;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90% !important;
+}
+  .what-we-do p {
+  width: 70%;
+}
+  .flex-child {
+  flex-basis: 100%;
+}
+}
+
+
+
+/* tablet */
+@media (max-width:768px) {
+  .navMenu a {
+    width: 6rem;
+    font-size: 0.90em;
+  }
+  .hero h1 {
+    font-size: 32px !important;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90% !important;
+}
+
+  .what-we-do p {
+    width: 70%;
+  }
+  .flex-container {
+    width: 90%;
+  }
+  .flex-child {
+    flex: 1 1 40%;
+  }
 }
