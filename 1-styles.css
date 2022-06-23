@@ -217,7 +217,7 @@ p {
 
   height: 200px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 75px;
   justify-content: space-between; /* could also try with space-around */
   margin-left: auto;
   margin-right: auto;
@@ -316,9 +316,7 @@ p {
   .what-we-do p {
   width: 70%;
 }
-  .flex-child {
-  flex-basis: 100%;
-}
+ 
 }
 
 
