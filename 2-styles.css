@@ -243,38 +243,51 @@ p {
   width: 70%;
 }
 
-.icon {
+/*icons */
+
+@font-face {
   font-family: 'holberton_school-icon';
-  font-size: 76px;
+  src:  url('./fonts/fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('./fonts/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('./fonts/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('./fonts/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('./fonts/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 96px;
   color: #FF6565;
+
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
-
-/*
 .holberton_school-icon-ic_sound:before {
   content: "\e90e";
-  font-family: 'holberton_school-icon-ic_sound';
-  font-size: 76px;
-
 }
-*/
-
-.section-image-1:before {
-  content: "\e90e";
-}
-
-.section-image-2:before {
+.holberton_school-icon-ic_video:before {
   content: "\e910";
 }
-
-.section-image-3:before {
+.holberton_school-icon-ic_music:before {
   content: "\e90d";
 }
-
-.section-image-4:before {
+.holberton_school-icon-ic_hearing:before {
   content: "\e909";
 }
+
 
 
 /* results section */
@@ -295,7 +308,6 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #071629;
-
 
 }
 .results .results-inner{
@@ -394,15 +406,22 @@ p {
     margin-right: auto;
     width: 90% !important;
 }
+  .what-we-do {
+    margin-bottom: 800px;
+  }
   .what-we-do p {
    width: 90% !important;
   
 }
+  .what-we-do .flex-child p {
+    width: 50%;
+}
   .results {
-   margin-top: 800px;
-   height: 175vh;
-   background-size: 1000px;
-   background-position: top center;
+    height: 165vh !important;
+    background-size: 1500px;
+    background-position: top center;
+
+
   }
 
   .results h2 {

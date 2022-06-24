@@ -15,6 +15,9 @@ body {
   overflow-x:hidden;
 
 }
+a {
+  text-decoration: none;
+}
 /*nav*/
 .navMenu {
   position: absolute;
@@ -120,7 +123,7 @@ h4 {
 
 p {
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 /* hero section */
@@ -174,6 +177,8 @@ p {
     border: none;
     font-weight: bold;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+
 }
 .hero .hero-btn:hover {
     opacity: 0.9;
@@ -183,7 +188,7 @@ p {
 /* what we do section */
 .what-we-do {
   width: 100vw;
-  height: 75vh;
+  height: 60vh;
 
   display: flex;
   justify-content: center;
@@ -290,6 +295,259 @@ p {
 
 
 
+/* results section */
+
+
+.results {
+  width: 100vw;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  padding-top: 150px;
+
+  background-image: url(images/headphones_hero_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #071629;
+
+}
+.results .results-inner{
+  width: 100%;
+
+}
+.results h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.results p {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding-top: 20px;
+}
+
+.pent{
+  background-image: url("images/pentagone.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  min-width: 200px;
+ 
+}
+
+.pent-text {
+  padding: 40px;
+  margin: 40px 0 0 0;
+
+}
+/*
+.results .flex-child {
+
+  background-image: url("images/pentagone.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 45px;
+  
+}
+*/
+
+.results-percentage {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+}
+.results .flex-child p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+/*contact section */
+.contact {
+  width: 100vw;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  padding-top: 150px;;
+
+}
+.contact-inner{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 40px auto 25px auto;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  margin: 1rem 0;
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+}
+
+.styled-input label {
+  color: #071629;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+
+input,
+textarea {
+  outline: 0;
+  border-width: 0 0 0.1px;
+  border-color: #07162941;
+  padding: 10px;
+  width: 100%;
+}
+
+.field-text{
+  font-weight:bold;
+  font-size: 14px;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+
+.contact-btn {
+  padding: 13px 33px;
+  margin-top: 30px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #FF6565;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.contact-btn:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.200),
+            0 2px 2px 0 rgba(0,0,0,0.200);
+  opacity: 0.9;
+}
+
+
+/* footer */
+
+footer {
+  width: 100vw;
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #071629;
+  flex-direction: column;
+}
+
+.footer-inner {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 200px;
+  width: 100%;
+  margin-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.footer-logo {
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: left;
+
+  flex: 1;
+}
+
+.copyright {
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.514);
+  font-size: 12px;
+  padding-bottom: 40px
+}
+
+.footer-socials {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: right;
+  text-decoration: none;
+  flex: 1;
+}
+
+
+footer [class^="holberton_school-icon-"], footer [class*=" holberton_school-icon-"] {
+  color: #fff;
+}
+
+.holberton_school-icon-ic_facebook:before, .holberton_school-icon-ic_facebook {
+  content: "\e908";
+  margin: 0 5px;
+  font-size: 32px;
+}
+
+.holberton_school-icon-ic_twitter:before, .holberton_school-icon-ic_twitter {
+  content: "\e90f";
+  margin: 0 5px;
+  font-size: 32px;
+
+
+}
+.holberton_school-icon-ic_instagram:before, .holberton_school-icon-ic_instagram {
+  content: "\e90a";
+  margin: 0 5px;
+  font-size: 32px;
+
+
+}
+
 
 
 
@@ -327,14 +585,37 @@ p {
     margin-right: auto;
     width: 90% !important;
 }
+  .what-we-do {
+    margin-bottom: 800px;
+  }
   .what-we-do p {
-  width: 70%;
+   width: 90% !important;
+  
 }
   .what-we-do .flex-child p {
     width: 50%;
+}
+  .results {
+    height: 165vh !important;
+    background-size: 1500px;
+    background-position: top center;
+
+
   }
 
- 
+  .results h2 {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .results p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
 }
 
 
@@ -365,4 +646,23 @@ p {
   .flex-child {
     flex: 1 1 40%;
   }
+  
+  .results {
+    margin-top: 300px;
+    height: 100vh;
+    background-size: 1500px;
+    background-position: top center;
+   }
+ 
+   .results h2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .results p {
+     width: 85%;
+     margin-left: auto;
+     margin-right: auto;
+   }
 }
